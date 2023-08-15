@@ -1,0 +1,273 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: montserrat;
+	src: url('assets/fonts/montserrat/Montserrat-Thin.otf');
+}
+
+* {
+	margin: 0px;
+	font-family: montserrat;
+	font-weight: thin;
+}
+
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 85%;
+	background-color: #ffbf69;
+}
+
+ul.navbar {
+	list-style-type: none;
+	margin-top: 0;
+	padding: 1% 8% 1% 8%;
+	overflow: hidden;
+}
+
+ul.navbar li {
+	float: right;
+}
+
+ul.navbar li a {
+	display: inline-block;
+	text-align: center;
+	padding: 14px 26px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	color: black;
+}
+
+ul.navbar li a:hover {
+	background-color: #eda74c;
+}
+
+ul.navbar li.icon {
+	display: none;
+}
+
+ul.navbar h1 {
+	float: left;
+}
+
+
+.banner {
+	width: 100%;
+	height: 550px;
+	padding: 0% 8% 1% 8%;
+	margin-top: -1%;
+	box-sizing: border-box;
+	color: white;
+	background-color: #ffbf69;
+	background-image: url('images/background.png');
+	background-size: 65% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner__content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.banner__content--button {
+	padding: 10px 15px 10px 15px;
+	background-color: #614BC3;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	text-decoration: none;
+	color: white;
+	margin-top: 30px;
+
+}
+
+.banner__content--satu {
+	width: 50%;
+}
+
+.banner__content--popit {
+	font-size: 100px;
+	font-weight: 900;
+	margin-top: 25%;
+}
+
+.about {
+	text-align: center;
+	padding: 8% 20% 8% 20%;
+	background-color: #614BC3;
+	color: white;
+	line-height: 150%;
+}
+
+.about_content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.about__sub__title {
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.course {
+	text-align: center;
+	padding: 8% 10% 8% 10%;
+	background-color: #CBF3F0;
+	line-height: 200%;
+}
+
+.course__sub__title {
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.course__content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+}
+
+.course__content--item {
+	padding: 5px;
+	width: 200px;
+	margin-top: 10px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.course__content--item img {
+	width: 80%;
+}
+
+.course--button {
+	text-decoration: none;
+	background-color: #ffbf69;
+	color: black;
+	padding: 5px 12px;
+	margin-top: 25px;
+}
+
+
+.course__content--item img:hover {
+	transform: scale(1.03);
+}
+
+.learn {
+	padding: 8% 10% 8% 10%;
+	background-color: #F1F0E8;
+	color: white;
+	line-height: 150%;
+	background-image: url('images/bg-grid.png');
+	background-size: 65% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.learn__content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0;
+	margin: 0;
+}
+
+.learn__content--item {
+	padding: 15px;
+	width: 350px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: black;
+
+}
+
+.learn__content--item img {
+	width: 100%;
+}
+
+.learn__content--title {
+	margin-top: 15%;
+}
+
+
+
+
+.footer {
+	padding: 2% 2% 2% 2%;
+	background-color: black;
+	margin: auto;
+	color: white;
+}
+
+.footer__content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0;
+	margin: 0;
+}
+
+.footer__content--item {
+	padding: 15px;
+	width: 150px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width:680px) {
+	ul.navbar li:not(:first-child) {
+		display: none;
+	}
+
+	ul.navbar li.icon {
+		display: inline-block;
+	}
+
+	ul.navbar h1 {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width:680px) {
+	ul.navbar.responsive {
+		position: relative;
+	}
+
+	ul.navbar.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	ul.navbar.responsive li {
+		float: none;
+		display: inline;
+	}
+
+	ul.navbar.responsive li a {
+		display: block;
+		text-align: left;
+	}
+
+	ul.navbar h1 {
+		display: none;
+	}
+
+	.banner .box1 {
+		margin-bottom: 13%;
+	}
+}
